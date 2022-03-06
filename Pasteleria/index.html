@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div id="headerPart">
+            <img src="images/Logo1.png" class="center">
+        <h1>The Fancy Cake</h1>
+        <h3>Sabor elegante para momentos especiales</h3>                
+        </div>                   
+
+        <div class="container gallery-container">
+
+            <h1>Deléitese con cualquiera de nuestros sabores</h1>                
+            
+            <div class="tz-gallery center-block text-center">
+        
+                <div class="row center-block text-center">
+                    <div class="col-sm-6 col-md-3 gallery-image" onclick="openFormCake('Vainilla', '300', 'images/vainilla.jpg')">
+                        <a class="lightbox">
+                            <img src="images/vainilla.jpg" alt="Vainilla">
+                        </a>
+                        <h4>Sabor vainilla</h4>
+                        <h5>$340</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-3 gallery-image">
+                        <a class="lightbox">
+                            <img src="images/chocolate.jpg" alt="Chocolate">
+                        </a>
+                        <h4>Sabor vainilla</h4>
+                        <h5>$340</h5>
+                    </div>
+                    <div class="col-sm-12 col-md-4 gallery-image">
+                        <a class="lightbox">
+                            <img src="images/fresa.jpg" alt="Fresa">
+                        </a>
+                        <h4>Sabor vainilla</h4>
+                        <h5>$340</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-4 gallery-image">
+                        <a class="lightbox">
+                            <img src="images/frambuesa.jpg" alt="Frambuesa">
+                        </a>
+                        <h4>Sabor vainilla</h4>
+                        <h5>$340</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-3 gallery-image">
+                        <a class="lightbox">
+                            <img src="images/coco.jpg" alt="Coco">
+                        </a>
+                        <h4>Sabor vainilla</h4>
+                        <h5>$340</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-3 gallery-image">
+                        <a class="lightbox">
+                            <img src="images/vinotinto.jpg" alt="Vino tinto">
+                        </a>
+                        <h4>Sabor vainilla</h4>
+                        <h5>$340</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-3 gallery-image">
+                        <a class="lightbox">
+                            <img src="images/limon.jpg" alt="Limón">
+                        </a>
+                        <h4>Sabor vainilla</h4>
+                        <h5>$340</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-3 gallery-image">
+                        <a class="lightbox">
+                            <img src="images/zanahoria.jpg" alt="Zanahoria">
+                        </a>
+                        <h4>Sabor vainilla</h4>
+                        <h5>$340</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-3 gallery-image">
+                        <a class="lightbox">
+                            <img src="images/tres-leches.jpg" alt="Tres leches">
+                        </a>
+                        <h4>Sabor vainilla</h4>
+                        <h5>$340</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-3 gallery-image">
+                        <a class="lightbox">
+                            <img src="images/queso.jpg" alt="Queso">
+                        </a>
+                        <h4>Sabor vainilla</h4>
+                        <h5>$340</h5>
+                    </div>
+                </div>
+
+                <p class="page-description text-center" style="color: black;">También puede echar un vistazo a estas decoraciones</p>
+        
+            </div>
+        
+        </div>
+
+
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h1>Login</h1>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+
+        <div class="cake-popup" id="cake-info">
+            <form action="/action_page.php" class="cake-container">
+              <h1 id="flavor">Sabor </h1>
+          
+              <!--<label for="flavor"><b>Pastel sabor </b></label>-->              
+                <div id="img-form">
+                </div>                    
+                <br>        
+                <label id="price" for="price"><b>$</b></label>
+          
+                <button type="submit" class="btn">Comprar </button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>        
+
+    </body>
+
+    <script>
+        function openFormCake(flavor, price, imgSrc){
+            document.getElementById("cake-info").style.display = "block";
+
+            var paragraph = document.getElementById("flavor");
+            var flavorText = document.createTextNode(flavor);
+            paragraph.appendChild(flavorText);
+
+            var img = document.createElement("img");
+            console.log(imgSrc);
+            img.src = imgSrc;
+            var src = document.getElementById("img-form");
+            src.appendChild(img);
+
+            paragraph = document.getElementById("price");
+            var priceText = document.createTextNode(price);
+            paragraph.appendChild(priceText);
+        }
+    </script>
+</html>

@@ -1,0 +1,198 @@
+body{    
+    font-family: 'ABeeZee', sans-serif;    
+    background-color: #E8E9EA;
+    min-height: 100vh;
+    padding: 60px 0;
+}
+
+h4{
+    padding: 0px;
+    margin: 0px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  }
+
+#headerPart{
+    text-align:center;  
+    padding-bottom: 2%;  
+}
+
+.gallery-image{
+    width: 18%;
+    height: 18%;
+    object-fit: cover;
+    background-color: #110038;
+    margin: 5px;
+    padding-top: 1%;
+    border-radius: 3%;
+    color: #BDBDBD;
+}
+
+.gallery-image:hover{
+    transform: scale(1.05);
+}
+
+.goldTitle{
+    text-decoration-color: #FFD700;
+}
+
+.container.gallery-container {
+    background-color: #BDBDBD;
+    color: #35373a;
+    min-height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;    
+    font-weight: bold;
+    color: #141414;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color: #888;
+    font-size: 18px;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/*#cake-info{
+    display: none; 
+}*/
+
+.cake-popup {
+    display: none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.cake-container {
+    max-width: 300px;
+    max-height: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.cake-container img{
+    width: 50px;
+    height: 50px;    
+}
+
+.cake-container, #img-form{
+    margin: 0 auto;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
