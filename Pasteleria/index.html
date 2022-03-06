@@ -27,78 +27,115 @@
                         <a class="lightbox">
                             <img src="images/vainilla.jpg" alt="Vainilla">
                         </a>
-                        <h4>Sabor vainilla</h4>
+                        <h4>Vainilla</h4>
                         <h5>$340</h5>
                     </div>
                     <div class="col-sm-6 col-md-3 gallery-image">
                         <a class="lightbox">
                             <img src="images/chocolate.jpg" alt="Chocolate">
                         </a>
-                        <h4>Sabor vainilla</h4>
-                        <h5>$340</h5>
+                        <h4>Chocolate</h4>
+                        <h5>$450</h5>
                     </div>
                     <div class="col-sm-12 col-md-4 gallery-image">
                         <a class="lightbox">
                             <img src="images/fresa.jpg" alt="Fresa">
                         </a>
-                        <h4>Sabor vainilla</h4>
-                        <h5>$340</h5>
+                        <h4>Fresa</h4>
+                        <h5>$400</h5>
                     </div>
                     <div class="col-sm-6 col-md-4 gallery-image">
                         <a class="lightbox">
                             <img src="images/frambuesa.jpg" alt="Frambuesa">
                         </a>
-                        <h4>Sabor vainilla</h4>
-                        <h5>$340</h5>
+                        <h4>Frambuesa</h4>
+                        <h5>$500</h5>
                     </div>
                     <div class="col-sm-6 col-md-3 gallery-image">
                         <a class="lightbox">
                             <img src="images/coco.jpg" alt="Coco">
                         </a>
-                        <h4>Sabor vainilla</h4>
-                        <h5>$340</h5>
+                        <h4>Coco</h4>
+                        <h5>$540</h5>
                     </div>
                     <div class="col-sm-6 col-md-3 gallery-image">
                         <a class="lightbox">
                             <img src="images/vinotinto.jpg" alt="Vino tinto">
                         </a>
-                        <h4>Sabor vainilla</h4>
-                        <h5>$340</h5>
+                        <h4>Vino tinto</h4>
+                        <h5>$950</h5>
                     </div>
                     <div class="col-sm-6 col-md-3 gallery-image">
                         <a class="lightbox">
                             <img src="images/limon.jpg" alt="Limón">
                         </a>
-                        <h4>Sabor vainilla</h4>
-                        <h5>$340</h5>
+                        <h4>Limón</h4>
+                        <h5>$600</h5>
                     </div>
                     <div class="col-sm-6 col-md-3 gallery-image">
                         <a class="lightbox">
                             <img src="images/zanahoria.jpg" alt="Zanahoria">
                         </a>
-                        <h4>Sabor vainilla</h4>
-                        <h5>$340</h5>
+                        <h4>Zanahoria</h4>
+                        <h5>$275</h5>
                     </div>
                     <div class="col-sm-6 col-md-3 gallery-image">
                         <a class="lightbox">
                             <img src="images/tres-leches.jpg" alt="Tres leches">
                         </a>
-                        <h4>Sabor vainilla</h4>
-                        <h5>$340</h5>
+                        <h4>Tres leches</h4>
+                        <h5>$390</h5>
                     </div>
                     <div class="col-sm-6 col-md-3 gallery-image">
                         <a class="lightbox">
                             <img src="images/queso.jpg" alt="Queso">
                         </a>
-                        <h4>Sabor vainilla</h4>
-                        <h5>$340</h5>
+                        <h4>Queso</h4>
+                        <h5>$510</h5>
                     </div>
                 </div>
-
-                <p class="page-description text-center" style="color: black;">También puede echar un vistazo a estas decoraciones</p>
+            </div>                
+            <h1>También puede echar un vistazo a estas decoraciones</h1>                  
+            <div class="tz-gallery center-block text-center">
         
-            </div>
-        
+                <div class="row center-block text-center">
+                    <div class="col-sm-6 col-md-3 gallery-image" onclick="openFormCake('Vainilla', '300', 'images/vainilla.jpg')">
+                        <a class="lightbox">
+                            <img src="images/funded.jpg" alt="Vainilla">
+                        </a>
+                        <h4>Decoración con funded</h4>
+                        <h5>$10</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-3 gallery-image">
+                        <a class="lightbox">
+                            <img src="images/betun.jpg" alt="Chocolate">
+                        </a>
+                        <h4>Decoración con betún</h4>
+                        <h5>$15</h5>
+                    </div>
+                    <div class="col-sm-12 col-md-4 gallery-image">
+                        <a class="lightbox">
+                            <img src="images/figuras.jpg" alt="Fresa">
+                        </a>
+                        <h4>Figuras para pastel</h4>
+                        <h5>$95</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-4 gallery-image">
+                        <a class="lightbox">
+                            <img src="images/frutas-verduras.jpg" alt="Frambuesa">
+                        </a>
+                        <h4>Decoración con frutas</h4>
+                        <h5>$40</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-3 gallery-image">
+                        <a class="lightbox">
+                            <img src="images/escritura-sabor.JPG" alt="Coco">
+                        </a>
+                        <h4>Escriba un mensaje</h4>
+                        <h5>$60</h5>
+                    </div>   
+                </div>                     
+            </div>        
         </div>
 
 
@@ -116,17 +153,30 @@
               <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
         </div>
-
         <div class="cake-popup" id="cake-info">
             <form action="/action_page.php" class="cake-container">
-              <h1 id="flavor">Sabor </h1>
+              <h1 id="flavor">Comprar pastel</h1>
           
-              <!--<label for="flavor"><b>Pastel sabor </b></label>-->              
-                <div id="img-form">
-                </div>                    
+              <!--<label for="flavor"><b>Pastel sabor </b></label>-->                                                 
                 <br>        
-                <label id="price" for="price"><b>$</b></label>
-          
+                <label for="flavor"><b>Sabor</b></label>
+                <select name="flavors" size="10">  
+                    <option value="Vainilla"> Vainillia </option>  
+                    <option value="Chocolate"> Chocolate </option>  
+                    <option value="Fresa"> Fresa </option>  
+                    <option value="Frambuesa"> Frambuesa </option>  
+                    <option value="Coco"> Coco </option>  
+                    <option value="Ford"> Ford </option>  
+                </select>
+                
+                <label for="decoration"><b>Sabor</b></label>
+                <select name="decorations" size="5">  
+                    <option value="Funded"> Funded </option>  
+                    <option value="Betun"> Betún </option>  
+                    <option value="Figuras"> Figuras </option>  
+                    <option value="Frutas"> Frutas </option>  
+                    <option value="Mensaje"> Mensaje </option>                       
+                </select>
                 <button type="submit" class="btn">Comprar </button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
