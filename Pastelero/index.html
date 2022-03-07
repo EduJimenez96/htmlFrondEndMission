@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../Pasteleria/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div id="headerPart-admin">
+            <img src="../Pasteleria/images/Logo1.png" class="start">
+        <h1>The Fancy Cake</h1>                        
+        </div>                   
+
+        <div class="admin-table">
+            <h3>Sabores disponibles</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nombre sabor</th>
+                        <th scope="col">Restantes</th>                
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Vainilla</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Chocolate</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Fresa</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Frambuesa</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Coco</td>
+                        <td>25</td>
+                      </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Vino tinto</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Limón</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Zanahoria</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Tres leches</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>Queso</td>
+                        <td>38</td>
+                    </tr>
+                </tbody>
+          </table>     
+        </div>
+
+        <div class="admin-table">
+            <h3>Decoraciones disponibles</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nombre decoración</th>
+                        <th scope="col">Restantes</th>                
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Funded</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Betún</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Figuras</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Frutas</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Mensaje</td>
+                        <td>25</td>
+                      </tr>                    
+                </tbody>
+          </table>     
+        </div>
+
+        <div class="admin-table">
+            <h3>Pedidos</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nombre cliente</th>
+                        <th scope="col">Correo electrónico</th>
+                        <th scope="col">Teléfono</th>
+                        <th scope="col">Domicilio</th>
+                        <th scope="col">Sabor pastel</th>
+                        <th scope="col">Decoraciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Nashandra</td>
+                        <td>nash_ds2@outlook.com</td>
+                        <td>2221113330</td>
+                        <td>Drangleic #2018</td>
+                        <td>Vino tinto</td>
+                        <td>Figuras y Funded</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Solaire de Astora</td>
+                        <td>praise_the_sun@outlook.com</td>
+                        <td>2017010815</td>
+                        <td>Anor Londo #02</td>
+                        <td>Limón y Zanahoria</td>
+                        <td>Funded</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Gwin Señor de la Ceniza</td>
+                        <td>no_more_dragons@outlook.com</td>
+                        <td>2016201718</td>
+                        <td>Anor Londo #01</td>
+                        <td>Vainilla</td>
+                        <td>Funded y Mensaje</td>
+                    </tr>                    
+                </tbody>
+          </table>     
+        </div>
+    </body>
+
+    <script>
+        function openFormCake(flavor, price){
+            document.getElementById("cake-info").style.display = "block";
+
+            var paragraph = document.getElementById("flavor");
+            var flavorText = document.createTextNode(flavor);
+            paragraph.appendChild(flavorText);
+
+            paragraph = document.getElementById("price");
+            var priceText = document.createTextNode("$" + price);
+            paragraph.appendChild(priceText);
+        }
+
+        function closeFormCake(){
+            document.getElementById("cake-info").style.display = "none";
+        }
+    </script>
+</html>

@@ -15,11 +15,27 @@ h4{
     margin-left: auto;
     margin-right: auto;
     width: 10%;
-  }
+}
 
 #headerPart{
     text-align:center;  
     padding-bottom: 2%;  
+}
+
+#headerPart-admin{
+    text-align:start; 
+    margin-left: 6%;
+    padding-bottom: 2%;  
+}
+
+.start {
+    display: block;
+    width: 5%;
+}
+
+.admin-table{
+    margin-left: 6%;
+    margin-right: 6%;
 }
 
 .gallery-image{
