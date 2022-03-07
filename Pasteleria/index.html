@@ -23,70 +23,70 @@
             <div class="tz-gallery center-block text-center">
         
                 <div class="row center-block text-center">
-                    <div class="col-sm-6 col-md-3 gallery-image" onclick="openFormCake('Vainilla', '300', 'images/vainilla.jpg')">
+                    <div class="col-sm-6 col-md-3 gallery-image" onclick="openFormCake('Vainilla', '340')">
                         <a class="lightbox">
                             <img src="images/vainilla.jpg" alt="Vainilla">
                         </a>
                         <h4>Vainilla</h4>
                         <h5>$340</h5>
                     </div>
-                    <div class="col-sm-6 col-md-3 gallery-image">
+                    <div class="col-sm-6 col-md-3 gallery-image" onclick="openFormCake('Chocolate', '450')">
                         <a class="lightbox">
                             <img src="images/chocolate.jpg" alt="Chocolate">
                         </a>
                         <h4>Chocolate</h4>
                         <h5>$450</h5>
                     </div>
-                    <div class="col-sm-12 col-md-4 gallery-image">
+                    <div class="col-sm-12 col-md-4 gallery-image" onclick="openFormCake('Fresa', '400')">
                         <a class="lightbox">
                             <img src="images/fresa.jpg" alt="Fresa">
                         </a>
                         <h4>Fresa</h4>
                         <h5>$400</h5>
                     </div>
-                    <div class="col-sm-6 col-md-4 gallery-image">
+                    <div class="col-sm-6 col-md-4 gallery-image" onclick="openFormCake('Frambuesa', '500')">
                         <a class="lightbox">
                             <img src="images/frambuesa.jpg" alt="Frambuesa">
                         </a>
                         <h4>Frambuesa</h4>
                         <h5>$500</h5>
                     </div>
-                    <div class="col-sm-6 col-md-3 gallery-image">
+                    <div class="col-sm-6 col-md-3 gallery-image" onclick="openFormCake('Coco', '540')">
                         <a class="lightbox">
                             <img src="images/coco.jpg" alt="Coco">
                         </a>
                         <h4>Coco</h4>
                         <h5>$540</h5>
                     </div>
-                    <div class="col-sm-6 col-md-3 gallery-image">
+                    <div class="col-sm-6 col-md-3 gallery-image" onclick="openFormCake('Vino tinto', '950')">
                         <a class="lightbox">
                             <img src="images/vinotinto.jpg" alt="Vino tinto">
                         </a>
                         <h4>Vino tinto</h4>
                         <h5>$950</h5>
                     </div>
-                    <div class="col-sm-6 col-md-3 gallery-image">
+                    <div class="col-sm-6 col-md-3 gallery-image" onclick="openFormCake('Limón', '600')">
                         <a class="lightbox">
                             <img src="images/limon.jpg" alt="Limón">
                         </a>
                         <h4>Limón</h4>
                         <h5>$600</h5>
                     </div>
-                    <div class="col-sm-6 col-md-3 gallery-image">
+                    <div class="col-sm-6 col-md-3 gallery-image" onclick="openFormCake('Zanahoria', '275')">
                         <a class="lightbox">
                             <img src="images/zanahoria.jpg" alt="Zanahoria">
                         </a>
                         <h4>Zanahoria</h4>
                         <h5>$275</h5>
                     </div>
-                    <div class="col-sm-6 col-md-3 gallery-image">
+                    <div class="col-sm-6 col-md-3 gallery-image" onclick="openFormCake('Tres leches', '390')">
                         <a class="lightbox">
                             <img src="images/tres-leches.jpg" alt="Tres leches">
                         </a>
                         <h4>Tres leches</h4>
                         <h5>$390</h5>
                     </div>
-                    <div class="col-sm-6 col-md-3 gallery-image">
+                    <div class="col-sm-6 col-md-3 gallery-image" onclick="openFormCake('Queso', '510')">
                         <a class="lightbox">
                             <img src="images/queso.jpg" alt="Queso">
                         </a>
@@ -155,52 +155,128 @@
         </div>
         <div class="cake-popup" id="cake-info">
             <form action="/action_page.php" class="cake-container">
-              <h1 id="flavor">Comprar pastel</h1>
+              <h1 id="flavor">Comprar pastel sabor </h1>
           
               <!--<label for="flavor"><b>Pastel sabor </b></label>-->                                                 
-                <br>        
-                <label for="flavor"><b>Sabor</b></label>
-                <select name="flavors" size="10">  
-                    <option value="Vainilla"> Vainillia </option>  
-                    <option value="Chocolate"> Chocolate </option>  
-                    <option value="Fresa"> Fresa </option>  
-                    <option value="Frambuesa"> Frambuesa </option>  
-                    <option value="Coco"> Coco </option>  
-                    <option value="Ford"> Ford </option>  
-                </select>
-                
-                <label for="decoration"><b>Sabor</b></label>
-                <select name="decorations" size="5">  
-                    <option value="Funded"> Funded </option>  
-                    <option value="Betun"> Betún </option>  
-                    <option value="Figuras"> Figuras </option>  
-                    <option value="Frutas"> Frutas </option>  
-                    <option value="Mensaje"> Mensaje </option>                       
-                </select>
-                <button type="submit" class="btn">Comprar </button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                <form multiSelect onsubmit="() => false">
+                    <table class="table">
+                        <thead>
+                          <tr>                            
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>                            
+                            <td><label for="name"><b>Nombre</b></label></td>
+                            <td><input type="text" placeholder="Escriba su nombre" name="name" required></td>
+                            <td><label for="email"><b>Correo electrónico</b></label></td>
+                            <td><input type="text" placeholder="Escriba su correo" name="email" required></td>
+                          </tr>
+                          <tr>
+                            <td><label for="phone"><b>Teléfono</b></label></td>
+                            <td><input type="number" placeholder="Escriba su número telefónico" name="phone" required></td>
+                            <td><label for="phone"><b>Dirección y calle</b></label></td>
+                            <td><input type="text" placeholder="Escriba su domicilio" name="address" required></td>
+                          </tr>
+                          <tr>
+                            <td><label for="flavor"><b>Sabor</b></label></ts>
+                            <td>
+                                <div visibleId="select1">
+                                    <select name="flavor">
+                                      <option value="nothing">Seleccione un sabor</option>
+                                      <option value="1" makeVisible="vainilla">Vainilla</option>
+                                      <option value="2" makeVisible="chocolate">Chocolate</option>
+                                      <option value="3" makeVisible="fresa">Fresa</option>
+                                      <option value="4" makeVisible="frambuesa">Frambuesa</option>
+                                      <option value="5" makeVisible="coco">Coco</option>
+                                      <option value="6" makeVisible="vino-tinto">Vino tinto</option>
+                                      <option value="7" makeVisible="limon">Limón</option>
+                                      <option value="8" makeVisible="zanahoria">Zanahoria</option>
+                                      <option value="9" makeVisible="tres-leches">Tres leches</option>
+                                      <option value="10" makeVisible="queso">Queso</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td><label for="flavor"><b>Segundo sabor</b></label></td>
+                            <td>
+                                <div visibleId="select1">
+                                    <select name="flavor">
+                                      <option value="nothing">Ninguno</option>
+                                      <option value="1" makeVisible="vainilla">Vainilla</option>
+                                      <option value="2" makeVisible="chocolate">Chocolate</option>
+                                      <option value="3" makeVisible="fresa">Fresa</option>
+                                      <option value="4" makeVisible="frambuesa">Frambuesa</option>
+                                      <option value="5" makeVisible="coco">Coco</option>
+                                      <option value="6" makeVisible="vino-tinto">Vino tinto</option>
+                                      <option value="7" makeVisible="limon">Limón</option>
+                                      <option value="8" makeVisible="zanahoria">Zanahoria</option>
+                                      <option value="9" makeVisible="tres-leches">Tres leches</option>
+                                      <option value="10" makeVisible="queso">Queso</option>
+                                    </select>
+                                </div>
+                            </td>
+                          </tr>
+                          <tr>                            
+                            <td><label for="flavor"><b>Decoración</b></label></ts>
+                            <td>
+                                <div visibleId="select1">
+                                    <select name="decorations">  
+                                        <option value="nothing">Seleccione una decoración</option>
+                                        <option value="1" makeVisible="funded"> Funded </option>  
+                                        <option value="2" makeVisible="betun"> Betún </option>  
+                                        <option value="3" makeVisible="figuras"> Figuras </option>  
+                                        <option value="4" makeVisible="frutas"> Frutas </option>  
+                                        <option value="5" makeVisible="mensaje"> Mensaje </option>                       
+                                    </select>
+                                </div>
+                            </td>
+                            <td><label for="flavor"><b>Segunda decoración</b></label></td>
+                            <td>
+                                <div visibleId="select1">
+                                    <select name="decorations">  
+                                        <option value="nothing">Ninguna</option>
+                                        <option value="1" makeVisible="funded"> Funded </option>  
+                                        <option value="2" makeVisible="betun"> Betún </option>  
+                                        <option value="3" makeVisible="figuras"> Figuras </option>  
+                                        <option value="4" makeVisible="frutas"> Frutas </option>  
+                                        <option value="5" makeVisible="mensaje"> Mensaje </option>                       
+                                    </select>
+                                </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>                                                            
+                    <h4>Costo</h4>                    
+                    <label for="flavor"><b id="price"></b></label>                    
+                    
+                    <div style="margin-top: 5%;">
+                        <button type="submit" class="btn">Comprar </button>
+                    <button type="button" class="btn cancel" onclick="closeFormCake()">Cancelar</button>
+                    </div>
+                </form>                             
             </form>
         </div>        
 
     </body>
 
     <script>
-        function openFormCake(flavor, price, imgSrc){
+        function openFormCake(flavor, price){
             document.getElementById("cake-info").style.display = "block";
 
             var paragraph = document.getElementById("flavor");
             var flavorText = document.createTextNode(flavor);
             paragraph.appendChild(flavorText);
 
-            var img = document.createElement("img");
-            console.log(imgSrc);
-            img.src = imgSrc;
-            var src = document.getElementById("img-form");
-            src.appendChild(img);
-
             paragraph = document.getElementById("price");
-            var priceText = document.createTextNode(price);
+            var priceText = document.createTextNode("$" + price);
             paragraph.appendChild(priceText);
+        }
+
+        function closeFormCake(){
+            document.getElementById("cake-info").style.display = "none";
         }
     </script>
 </html>
