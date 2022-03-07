@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Pastelero</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -166,22 +166,4 @@
           </table>     
         </div>
     </body>
-
-    <script>
-        function openFormCake(flavor, price){
-            document.getElementById("cake-info").style.display = "block";
-
-            var paragraph = document.getElementById("flavor");
-            var flavorText = document.createTextNode(flavor);
-            paragraph.appendChild(flavorText);
-
-            paragraph = document.getElementById("price");
-            var priceText = document.createTextNode("$" + price);
-            paragraph.appendChild(priceText);
-        }
-
-        function closeFormCake(){
-            document.getElementById("cake-info").style.display = "none";
-        }
-    </script>
 </html>

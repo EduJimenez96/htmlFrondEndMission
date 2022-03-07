@@ -266,9 +266,17 @@
         function openFormCake(flavor, price){
             document.getElementById("cake-info").style.display = "block";
 
-            var paragraph = document.getElementById("flavor");
+            if(document.getElementById('flavor').innerHTML != 'Comprar pastel sabor '){
+                document.getElementById('flavor').innerHTML = 'Comprar pastel sabor '
+            }
+
+            var paragraph = document.getElementById("flavor");            
             var flavorText = document.createTextNode(flavor);
             paragraph.appendChild(flavorText);
+
+            if(document.getElementById('price').innerHTML != ''){
+                document.getElementById('price').innerHTML = ''
+            }
 
             paragraph = document.getElementById("price");
             var priceText = document.createTextNode("$" + price);
